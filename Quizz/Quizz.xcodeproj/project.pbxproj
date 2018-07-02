@@ -14,6 +14,7 @@
 		8B548C5520E3EA4400EFA21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B548C5320E3EA4400EFA21D /* LaunchScreen.storyboard */; };
 		8B548C6020E3EA4400EFA21D /* QuizzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548C5F20E3EA4400EFA21D /* QuizzTests.swift */; };
 		8B548C6B20E3EA4400EFA21D /* QuizzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548C6A20E3EA4400EFA21D /* QuizzUITests.swift */; };
+		8B64656B20EA84BE0089292D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B64656A20EA84BE0089292D /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8B548C6620E3EA4400EFA21D /* QuizzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B548C6A20E3EA4400EFA21D /* QuizzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzUITests.swift; sourceTree = "<group>"; };
 		8B548C6C20E3EA4400EFA21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B64656A20EA84BE0089292D /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				8B548C4A20E3EA4400EFA21D /* AppDelegate.swift */,
+				8B64656A20EA84BE0089292D /* QuestionViewController.swift */,
 				8B548C4C20E3EA4400EFA21D /* ViewController.swift */,
 				8B548C4E20E3EA4400EFA21D /* Main.storyboard */,
 				8B548C5120E3EA4400EFA21D /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 			files = (
 				8B548C4D20E3EA4400EFA21D /* ViewController.swift in Sources */,
 				8B548C4B20E3EA4400EFA21D /* AppDelegate.swift in Sources */,
+				8B64656B20EA84BE0089292D /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
