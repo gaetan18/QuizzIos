@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D6799E720FB05E500380935 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6799E620FB05E500380935 /* ResultsViewController.swift */; };
 		8B548C4B20E3EA4400EFA21D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548C4A20E3EA4400EFA21D /* AppDelegate.swift */; };
 		8B548C4D20E3EA4400EFA21D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548C4C20E3EA4400EFA21D /* ViewController.swift */; };
 		8B548C5020E3EA4400EFA21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B548C4E20E3EA4400EFA21D /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D6799E620FB05E500380935 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		8B548C4720E3EA4400EFA21D /* Quizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B548C4A20E3EA4400EFA21D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B548C4C20E3EA4400EFA21D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				8B548C5120E3EA4400EFA21D /* Assets.xcassets */,
 				8B548C5320E3EA4400EFA21D /* LaunchScreen.storyboard */,
 				8B548C5620E3EA4400EFA21D /* Info.plist */,
+				0D6799E620FB05E500380935 /* ResultsViewController.swift */,
 			);
 			path = Quizz;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				8B548C4D20E3EA4400EFA21D /* ViewController.swift in Sources */,
 				8B548C4B20E3EA4400EFA21D /* AppDelegate.swift in Sources */,
 				8B64656B20EA84BE0089292D /* QuestionViewController.swift in Sources */,
+				0D6799E720FB05E500380935 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

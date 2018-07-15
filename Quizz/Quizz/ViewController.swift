@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var joueur1TF: UITextField!
     @IBOutlet weak var joueur2TF: UITextField!
     
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -25,21 +25,27 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //todo ajouter un test de non nullité des nom de joueurs
-        var player1 = Player(name:joueur1TF.text!,score:0)
-        var player2 = Player(name:joueur2TF.text!,score:0)
+        let player1 = Player(name:joueur1TF.text!)
+        let player2 = Player(name:joueur2TF.text!)
         
         var array = [Player]()
         array.append(player1)
         array.append(player2)
-
         
-            guard let destination = segue.destination as? QuestionViewController else { return }
-            destination.players = array
-        }
-
+        
+        guard let destination = segue.destination as? QuestionViewController else { return }
+        destination.players = array
+    }
+    
 }
-struct Player {
-    var name: String
-    var score: Int
+class Player {
+    var name: String = ""
+    var nbAnswer: Int = 0
+    var nbCorrectAnswer: Int = 0
+    var score: Int = 0
+    init(name : String) {
+        self.name = name
+    }
+    
 }
 
