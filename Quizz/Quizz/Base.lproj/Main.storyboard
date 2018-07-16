@@ -247,18 +247,8 @@
                                     <action selector="reDo:" destination="oM5-KC-V1A" eventType="touchUpInside" id="EcO-5t-HP7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-0X-ZWU">
-                                <rect key="frame" x="110" y="193" width="156" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="uNB-JI-Ywi"/>
-                                    <constraint firstAttribute="width" constant="156" id="wdb-Qd-mZZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzl-l4-JvU">
-                                <rect key="frame" x="109" y="241" width="164" height="29"/>
+                                <rect key="frame" x="60" y="241" width="255" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="164" id="EYT-N1-SfG"/>
                                     <constraint firstAttribute="height" constant="29" id="j2P-8q-gEk"/>
@@ -267,21 +257,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-0X-ZWU">
+                                <rect key="frame" x="60" y="193" width="255" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="uNB-JI-Ywi"/>
+                                    <constraint firstAttribute="width" constant="156" id="wdb-Qd-mZZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Dzl-l4-JvU" firstAttribute="leading" secondItem="MEa-vu-4jt" secondAttribute="leading" constant="60" id="30M-7F-rqG"/>
                             <constraint firstItem="MEa-vu-4jt" firstAttribute="trailing" secondItem="JGB-vi-qz5" secondAttribute="trailing" constant="165" id="4YU-G5-kKB"/>
-                            <constraint firstItem="aKh-0X-ZWU" firstAttribute="leading" secondItem="MEa-vu-4jt" secondAttribute="leading" constant="110" id="7Aa-T3-EPr"/>
+                            <constraint firstItem="MEa-vu-4jt" firstAttribute="trailing" secondItem="aKh-0X-ZWU" secondAttribute="trailing" constant="60" id="7Vn-Sz-qbc"/>
                             <constraint firstItem="JGB-vi-qz5" firstAttribute="top" secondItem="Dzl-l4-JvU" secondAttribute="bottom" constant="298" id="94F-D2-AIl"/>
-                            <constraint firstItem="MEa-vu-4jt" firstAttribute="trailing" secondItem="Dzl-l4-JvU" secondAttribute="trailing" constant="102" id="JlQ-Uy-7el"/>
                             <constraint firstItem="MEa-vu-4jt" firstAttribute="bottom" secondItem="JGB-vi-qz5" secondAttribute="bottom" constant="69" id="L4M-xH-IDe"/>
-                            <constraint firstItem="MEa-vu-4jt" firstAttribute="trailing" secondItem="aKh-0X-ZWU" secondAttribute="trailing" constant="109" id="NGs-eZ-XhP"/>
+                            <constraint firstItem="MEa-vu-4jt" firstAttribute="trailing" secondItem="Dzl-l4-JvU" secondAttribute="trailing" constant="60" id="Nqu-AN-CrY"/>
                             <constraint firstItem="Dzl-l4-JvU" firstAttribute="top" secondItem="aKh-0X-ZWU" secondAttribute="bottom" constant="25" id="Qzh-UV-5ZA"/>
                             <constraint firstItem="JGB-vi-qz5" firstAttribute="leading" secondItem="MEa-vu-4jt" secondAttribute="leading" constant="164" id="SMu-iu-o6j"/>
                             <constraint firstItem="G8T-d4-6Vz" firstAttribute="leading" secondItem="MEa-vu-4jt" secondAttribute="leading" constant="109" id="Xus-jA-vaP"/>
                             <constraint firstItem="aKh-0X-ZWU" firstAttribute="top" secondItem="G8T-d4-6Vz" secondAttribute="bottom" constant="104" id="Z8r-fZ-uWx"/>
                             <constraint firstItem="MEa-vu-4jt" firstAttribute="trailing" secondItem="G8T-d4-6Vz" secondAttribute="trailing" constant="109" id="bMJ-de-YUM"/>
-                            <constraint firstItem="Dzl-l4-JvU" firstAttribute="leading" secondItem="MEa-vu-4jt" secondAttribute="leading" constant="109" id="if0-4P-PwF"/>
+                            <constraint firstItem="aKh-0X-ZWU" firstAttribute="leading" secondItem="MEa-vu-4jt" secondAttribute="leading" constant="60" id="dpn-fu-pgE"/>
                             <constraint firstItem="Dzl-l4-JvU" firstAttribute="top" secondItem="aKh-0X-ZWU" secondAttribute="bottom" constant="25" id="syQ-9y-ZjC"/>
                             <constraint firstItem="G8T-d4-6Vz" firstAttribute="top" secondItem="MEa-vu-4jt" secondAttribute="top" constant="48.5" id="un3-Va-l01"/>
                         </constraints>

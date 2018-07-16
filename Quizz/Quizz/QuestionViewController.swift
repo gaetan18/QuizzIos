@@ -22,7 +22,7 @@ class QuestionViewController: UIViewController {
     var players : [Player]!
     var currentQuestion : Question!
     var currentAnswer : String!
-    var currentPlayer : Player!
+    var currentPlayer : Player?
     var nbQuestions : Int = 3
     
     struct Question {
@@ -47,13 +47,27 @@ class QuestionViewController: UIViewController {
         for player in players {
             print("dans player")
             if(player.nbAnswer<nbQuestions){
+                /** En cas de changement de joueur, on affiche une notification **/
+                changePlayerAlert(player : player)
                 currentPlayer = player
-                playerName.text = currentPlayer.name
+                
+                playerName.text = currentPlayer!.name
                 configure(getRandomQuestion())
                 return
             }
         }
         performSegue(withIdentifier: "sgShowResults", sender: nil)
+    }
+    
+    func changePlayerAlert(player : Player){
+        guard let name = currentPlayer?.name else {
+            return
+        }
+        if(name != player.name){
+            let alert = UIAlertController(title: "Changement de joueur !", message: "Au tour de \(player.name)", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,45 +78,45 @@ class QuestionViewController: UIViewController {
     @IBAction func button1(_ sender: UIButton) {
         let button : UIButton = sender as! UIButton
         if(button.titleLabel!.text == currentAnswer){
-            currentPlayer.nbCorrectAnswer = currentPlayer.nbCorrectAnswer + 1
+            currentPlayer!.nbCorrectAnswer = currentPlayer!.nbCorrectAnswer + 1
         }
         print("1 :")
-        currentPlayer.nbAnswer = currentPlayer.nbAnswer + 1
-        print(currentPlayer.nbAnswer)
-        print(currentPlayer.nbCorrectAnswer)
+        currentPlayer!.nbAnswer = currentPlayer!.nbAnswer + 1
+        print(currentPlayer!.nbAnswer)
+        print(currentPlayer!.nbCorrectAnswer)
         launchGame()
     }
     @IBAction func button2(_ sender: UIButton) {
         let button : UIButton = sender as! UIButton
         if(button.titleLabel!.text == currentAnswer){
-            currentPlayer.nbCorrectAnswer = currentPlayer.nbCorrectAnswer + 1
+            currentPlayer!.nbCorrectAnswer = currentPlayer!.nbCorrectAnswer + 1
         }
         print("2 :")
-        currentPlayer.nbAnswer = currentPlayer.nbAnswer + 1
-        print(currentPlayer.nbAnswer)
-        print(currentPlayer.nbCorrectAnswer)
+        currentPlayer!.nbAnswer = currentPlayer!.nbAnswer + 1
+        print(currentPlayer!.nbAnswer)
+        print(currentPlayer!.nbCorrectAnswer)
         launchGame()
     }
     @IBAction func button3(_ sender: UIButton) {
         let button : UIButton = sender as! UIButton
         if(button.titleLabel!.text == currentAnswer){
-            currentPlayer.nbCorrectAnswer = currentPlayer.nbCorrectAnswer + 1
+            currentPlayer!.nbCorrectAnswer = currentPlayer!.nbCorrectAnswer + 1
         }
         print("3 :")
-        currentPlayer.nbAnswer = currentPlayer.nbAnswer + 1
-        print(currentPlayer.nbAnswer)
-        print(currentPlayer.nbCorrectAnswer)
+        currentPlayer!.nbAnswer = currentPlayer!.nbAnswer + 1
+        print(currentPlayer!.nbAnswer)
+        print(currentPlayer!.nbCorrectAnswer)
         launchGame()
     }
     @IBAction func button4(_ sender: UIButton) {
         let button : UIButton = sender as! UIButton
         if(button.titleLabel!.text == currentAnswer){
-            currentPlayer.nbCorrectAnswer = currentPlayer.nbCorrectAnswer + 1
+            currentPlayer!.nbCorrectAnswer = currentPlayer!.nbCorrectAnswer + 1
         }
         print("4 :")
-        currentPlayer.nbAnswer = currentPlayer.nbAnswer + 1
-        print(currentPlayer.nbAnswer)
-        print(currentPlayer.nbCorrectAnswer)
+        currentPlayer!.nbAnswer = currentPlayer!.nbAnswer + 1
+        print(currentPlayer!.nbAnswer)
+        print(currentPlayer!.nbCorrectAnswer)
         launchGame()
     }
     
