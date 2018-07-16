@@ -42,10 +42,8 @@ class QuestionViewController: UIViewController {
     }
     
     func launchGame(){
-        print("dans launch")
         //On parcours la liste des jours et on prend le premier qui doit répondre à une question
         for player in players {
-            print("dans player")
             if(player.nbAnswer<nbQuestions){
                 /** En cas de changement de joueur, on affiche une notification **/
                 changePlayerAlert(player : player)
@@ -80,7 +78,6 @@ class QuestionViewController: UIViewController {
         if(button.titleLabel!.text == currentAnswer){
             currentPlayer!.nbCorrectAnswer = currentPlayer!.nbCorrectAnswer + 1
         }
-        print("1 :")
         currentPlayer!.nbAnswer = currentPlayer!.nbAnswer + 1
         print(currentPlayer!.nbAnswer)
         print(currentPlayer!.nbCorrectAnswer)
@@ -91,7 +88,6 @@ class QuestionViewController: UIViewController {
         if(button.titleLabel!.text == currentAnswer){
             currentPlayer!.nbCorrectAnswer = currentPlayer!.nbCorrectAnswer + 1
         }
-        print("2 :")
         currentPlayer!.nbAnswer = currentPlayer!.nbAnswer + 1
         print(currentPlayer!.nbAnswer)
         print(currentPlayer!.nbCorrectAnswer)
@@ -102,7 +98,6 @@ class QuestionViewController: UIViewController {
         if(button.titleLabel!.text == currentAnswer){
             currentPlayer!.nbCorrectAnswer = currentPlayer!.nbCorrectAnswer + 1
         }
-        print("3 :")
         currentPlayer!.nbAnswer = currentPlayer!.nbAnswer + 1
         print(currentPlayer!.nbAnswer)
         print(currentPlayer!.nbCorrectAnswer)
@@ -113,7 +108,6 @@ class QuestionViewController: UIViewController {
         if(button.titleLabel!.text == currentAnswer){
             currentPlayer!.nbCorrectAnswer = currentPlayer!.nbCorrectAnswer + 1
         }
-        print("4 :")
         currentPlayer!.nbAnswer = currentPlayer!.nbAnswer + 1
         print(currentPlayer!.nbAnswer)
         print(currentPlayer!.nbCorrectAnswer)
