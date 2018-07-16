@@ -315,7 +315,7 @@ class QuestionViewController: UIViewController {
     }
     
     func restQuestionsRepository(){
-        let endpoint: String = "https://jsonplaceholder.typicode.com/todos/1"
+        let endpoint: String = "http://demo5998421.mockable.io/"
         guard let url = URL(string: endpoint		) else {
             print("Error: cannot create URL")
             return
@@ -338,19 +338,18 @@ class QuestionViewController: UIViewController {
             }
             // parse the result as JSON, since that's what the API provides
             do {
-                guard let todo = try JSONSerialization.jsonObject(with: responseData, options: [])
+                guard let question = try JSONSerialization.jsonObject(with: responseData, options: [])
                     as? [String: Any] else {
                         print("error trying to convert data to JSON")
                         return
                 }
-                // now we have the todo
-                // let's just print it to prove we can access it
-                print("The todo is: " + todo.description)
+              
+                
                 
                 // the todo object is a dictionary
                 // so we just access the title using the "title" key
                 // so check for a title and print it if we have one
-                guard let todoTitle = todo["title"] as? String else {
+                guard let todoTitle = question["title"] as? String else {
                     print("Could not get todo title from JSON")
                     return
                 }
