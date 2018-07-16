@@ -221,29 +221,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8T-d4-6Vz">
-                                <rect key="frame" x="29" y="197" width="323" height="115"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8T-d4-6Vz">
+                                <rect key="frame" x="180" y="291" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGB-vi-qz5">
+                                <rect key="frame" x="164" y="489" width="46" height="109"/>
+                                <accessibility key="accessibilityConfiguration" label="OK"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="reDo:" destination="oM5-KC-V1A" eventType="touchUpInside" id="EcO-5t-HP7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MEa-vu-4jt" firstAttribute="bottom" secondItem="G8T-d4-6Vz" secondAttribute="bottom" constant="355" id="3D8-9G-7Cj"/>
+                            <constraint firstItem="MEa-vu-4jt" firstAttribute="trailing" secondItem="JGB-vi-qz5" secondAttribute="trailing" constant="165" id="4YU-G5-kKB"/>
                             <constraint firstItem="MEa-vu-4jt" firstAttribute="trailing" secondItem="G8T-d4-6Vz" secondAttribute="trailing" constant="153" id="7LN-AK-PcI"/>
+                            <constraint firstItem="MEa-vu-4jt" firstAttribute="bottom" secondItem="JGB-vi-qz5" secondAttribute="bottom" constant="69" id="L4M-xH-IDe"/>
                             <constraint firstItem="G8T-d4-6Vz" firstAttribute="leading" secondItem="MEa-vu-4jt" secondAttribute="leading" constant="180" id="S4T-FS-ABb"/>
+                            <constraint firstItem="JGB-vi-qz5" firstAttribute="leading" secondItem="MEa-vu-4jt" secondAttribute="leading" constant="164" id="SMu-iu-o6j"/>
                             <constraint firstItem="G8T-d4-6Vz" firstAttribute="top" secondItem="MEa-vu-4jt" secondAttribute="top" constant="271" id="qIS-Fk-wBU"/>
+                            <constraint firstItem="JGB-vi-qz5" firstAttribute="top" secondItem="G8T-d4-6Vz" secondAttribute="bottom" constant="177" id="vWd-pl-htI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MEa-vu-4jt"/>
                     </view>
                     <connections>
                         <outlet property="resultLabel" destination="G8T-d4-6Vz" id="ExC-xZ-y2Q"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="sgMenu" id="UkP-5u-OoW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51z-DI-kHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="115.59220389805098"/>
+            <point key="canvasLocation" x="918" y="907"/>
         </scene>
     </scenes>
 </document>

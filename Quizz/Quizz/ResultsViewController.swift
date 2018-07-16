@@ -13,7 +13,10 @@ class ResultsViewController: UIViewController {
             if(player.nbCorrectAnswer > winnerPlayer.nbCorrectAnswer){
                 winnerPlayer = player
             }
-            resultLabel.text = "\(winnerPlayer.name) gagne avec un total de \(winnerPlayer.nbCorrectAnswer) !"
+            resultLabel.text = "\(winnerPlayer.name) gagne !"
         }
+    }
+    @IBAction func reDo(_ sender: UIButton) {
+         performSegue(withIdentifier: "sgMenu", sender: nil)
     }
 }
